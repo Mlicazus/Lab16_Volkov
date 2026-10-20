@@ -82,3 +82,10 @@
 // {
 //     Console.WriteLine(slot);
 // }
+
+// int[] grades = { 4, 5, 3, 5, 4, 2 };
+// Array.Sort(grades);
+// foreach (int grade in grades)
+// {
+//     Console.WriteLine(grade);
+// }
