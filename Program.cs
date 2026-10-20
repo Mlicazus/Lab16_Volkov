@@ -27,3 +27,58 @@
 //     Console.WriteLine(point);
 // }
 
+// int[] grades = { 4, 5, 3, 5, 4, 2 };
+// for (int i = 0; i < grades.Length - 1; i++)
+// {
+//     for (int j = 0; j < grades.Length - 1 - i; j++)
+//     {
+//         if (grades[j] < grades[j + 1])
+//         {
+//             int temp = grades[j];
+//             grades[j] = grades[j + 1];
+//             grades[j + 1] = temp;
+//         }
+//     }
+// }
+// foreach (int grade in grades)
+// {
+//     Console.WriteLine(grade);
+// }
+
+// int[] GenerateScheduleSlots(int lessonsCount)
+// {
+//     int[] slots = new int[lessonsCount];
+//     for (int i = 0; i < lessonsCount; i++)
+//     {
+//         slots[i] = i + 1;
+//     }
+//     return slots;
+// }
+// int[] slots = GenerateScheduleSlots(8);
+// int countEven = 0;
+// foreach (int even in slots)
+// {
+//     if (even % 2 == 0)
+//     {
+//         countEven++;
+//     }
+// }
+// int[] GenerateEvenSlots(int lessonsCount)
+// {
+//     int[] slotsEven = new int[countEven];
+//     int index = 0;
+//     for (int j = 0; j < lessonsCount; j++)
+//     {
+//         if (slots[j] % 2 == 0)
+//         {
+//             slotsEven[index] = slots[j];
+//             index++;
+//         }
+//     }
+//     return slotsEven;
+// }
+// int[] slotsEven = GenerateEvenSlots(8);
+// foreach (int slot in slotsEven)
+// {
+//     Console.WriteLine(slot);
+// }
