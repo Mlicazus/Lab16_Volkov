@@ -89,3 +89,85 @@
 // {
 //     Console.WriteLine(grade);
 // }
+
+// // Задача А
+// System.Console.Write("Введите число: ");
+// int n = int.Parse(System.Console.ReadLine());
+// int[] massifN = new int[n];
+// for (int i = 0; i < n; i++)
+// {
+//     massifN[i] = (i + 1) * (i + 1);
+// }
+// foreach (int num in massifN)
+// {
+//     System.Console.WriteLine(num);
+// }
+
+// // Задача Б
+// int[] massif = { 1, -2, -3, -4, 5, -6, -7, -8, -9, 10 };
+// for (int i = 0; i < massif.Length; i++)
+// {
+//     if (massif[i] < 0)
+//     {
+//         massif[i] = 0;
+//     }
+// }
+// foreach (int num in massif)
+// {
+//     System.Console.WriteLine(num);
+// }
+
+// System.Console.Write("Введите свою фамилию: ");
+// string surname = System.Console.ReadLine()!.Trim();
+// if (string.IsNullOrEmpty(surname))
+// {
+//     System.Console.WriteLine("Фамилия не введена. Завершение работы.");
+//     return;
+// }
+// Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
+// var assigned = Enumerable.Range(1, 10)
+//     .OrderBy(_ => rnd.Next())
+//     .Take(2)
+//     .OrderBy(x => x)
+//     .ToList();
+// System.Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
+
+// // Вариант 7
+// int[] SquareAll(int[] numbers)
+// {
+//     for (int i = 0; i < numbers.Length; i++)
+//     {
+//         numbers[i] *= numbers[i];
+//     }
+//     return numbers;
+// }
+// int[] numbers = { 1, 2, 3, 4, 5 };
+// int[] newMassif = SquareAll(numbers);
+// foreach (int num in newMassif)
+// {
+//     System.Console.WriteLine(num);
+// }
+
+// // Вариант 9
+// int[] MergeArrays(int[] first, int[] second)
+// {
+//     int[] massif = new int[first.Length + second.Length];
+//     for (int i = 0; i < first.Length; i++)
+//     {
+//         massif[i] = first[i];
+//     }
+//     int k = 0;
+//     for (int j = first.Length; j < first.Length + second.Length; j++)
+//     {
+//         massif[j] = second[k];
+//         k++;
+//     }
+//     return massif;
+// }
+// int[] first = { 1, 2, 3 };
+// int[] second = { 4, 5 };
+// int[] massif = MergeArrays(first, second);
+// foreach (int num in massif)
+// {
+//     System.Console.WriteLine(num);
+// }
